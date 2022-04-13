@@ -57,7 +57,7 @@ exports.bytes = encoder(
     var len = varint.decode(buffer, offset)
     offset += varint.decode.bytes
 
-    var val = Buffer.slice(buffer, offset, offset + len)
+    var val = buffer.slice(offset, offset + len)
     offset += val.length
 
     decode.bytes = offset - oldOffset
@@ -198,7 +198,7 @@ exports.fixed64 = exports.sfixed64 = encoder(
     return buffer
   },
   function decode(buffer, offset) {
-    var val = Buffer.slice(buffer, offset, offset + 8)
+    var val = buffer.slice(offset, offset + 8)
     decode.bytes = 8
     return val
   },
