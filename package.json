@@ -1,7 +1,7 @@
 {
   "name": "protocol-buffers-encodings",
   "version": "1.1.1",
-  "description": "Base encodings for protocol-buffers",
+  "description": "core/protocol-buffers",
   "main": "index.js",
   "dependencies": {
     "signed-varint": "^2.0.1",
@@ -16,12 +16,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mafintosh/protocol-buffers-encodings.git"
+    "url": "https://github.com/backbonedao/protocol-buffers-encodings.git"
   },
-  "author": "Mathias Buus (@mafintosh)",
-  "license": "MIT",
+  "contributors": [
+    {
+      "name": "backbone://dao",
+      "email": "team@backbonedao.com",
+      "url": "https://backbonedao.com"
+    },
+    {
+      "name": "Mathias Buus (@mafintosh)"
+    }
+  ],
+  "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/mafintosh/protocol-buffers-encodings/issues"
+    "url": "https://github.com/backbonedao/protocol-buffers-encodings/issues"
   },
-  "homepage": "https://github.com/mafintosh/protocol-buffers-encodings"
+  "homepage": "https://github.com/backbonedao/protocol-buffers-encodings"
 }
